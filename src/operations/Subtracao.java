@@ -2,43 +2,71 @@ package operations;
 
 import interfaces.ICalculadora;
 
-public class Subtracao implements ICalculadora {
-	public Integer calcula(Integer n1, Integer n2) {
-	    return n1 - n2;
-	  }
+	public class Subtracao implements ICalculadora {
+		public Integer calcula(Integer n1, Integer n2) {
+			Integer resultado = null;
 
-	  public Float calcula(Float n1, Float n2) {
-	    return n1 - n2;
-	  }
+			if (n1 == null || n2 == null) {
 
-	  public Double calcula(Double n1, Double n2) {
-	    return n1 - n2;
-	  }
+				System.out.println("Não é possivel realizar a operação sem uma entrada de dados!");
 
-	  public Integer calcula(Integer[] numbers) {
-	    int resultado = 0;
+			} else {
+				resultado = n1 - n2;
+			}
 
-	    for (int number : numbers) {
-	      resultado -= number;
-	    }
-	    return resultado;
-	  }
+			return resultado;
+		 }
 
-	  public Float calcula(Float[] numbers) {
-	    float resultado = 0;
+		 public Float calcula(Float n1, Float n2) {
+			 Float resultado = null;
 
-	    for (float number : numbers) {
-	      resultado -= number;
-	    }
-	    return resultado;
-	  }
+				if (n1 == null || n2 == null) {
 
-	  public Double calcula(Double[] numbers) {
-	    double resultado = 0;
+					System.out.println("Não é possivel realizar a operação sem uma entrada de dados!");
 
-	    for (double number : numbers) {
-	      resultado -= number;
-	    }
-	    return resultado;
-	  }
-}
+				} else {
+					resultado = n1 - n2;
+				}
+
+				return resultado;
+		 }
+
+		 public Double calcula(Double n1, Double n2) {
+			 Double resultado = null;
+
+				if (n1 == null || n2 == null) {
+
+					System.out.println("Não é possivel realizar a operação sem uma entrada de dados!");
+
+				} else {
+					resultado = n1 - n2;
+				}
+
+				return resultado;
+		 }
+
+		 public Integer calcula(Integer[] numbers) {
+			 Integer sub = numbers[0];
+				for (int i = 1; i < numbers.length; i++) {
+					sub -= numbers[i];
+				}
+				return sub;
+		 }
+
+		 public Float calcula(Float[] numbers) {
+			 Float sub = numbers[0];
+				for (int i = 1; i < numbers.length; i++) {
+					sub -= numbers[i];
+				}
+				return sub;
+		 }
+
+		 public Double calcula(Double[] numbers) {
+			 Double sub = numbers[0];
+				for (int i = 1; i < numbers.length; i++) {
+					sub -= numbers[i];
+				}
+				return sub;
+			}
+	}
+		
