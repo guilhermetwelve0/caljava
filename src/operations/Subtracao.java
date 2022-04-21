@@ -8,7 +8,6 @@ import interfaces.ICalculadora;
 
 			if (n1 == null || n2 == null) {
 
-				System.out.println("Não é possivel realizar a operação sem uma entrada de dados!");
 
 			} else {
 				resultado = n1 - n2;
@@ -22,7 +21,7 @@ import interfaces.ICalculadora;
 
 				if (n1 == null || n2 == null) {
 
-					System.out.println("Não é possivel realizar a operação sem uma entrada de dados!");
+
 
 				} else {
 					resultado = n1 - n2;
@@ -36,7 +35,6 @@ import interfaces.ICalculadora;
 
 				if (n1 == null || n2 == null) {
 
-					System.out.println("Não é possivel realizar a operação sem uma entrada de dados!");
 
 				} else {
 					resultado = n1 - n2;
